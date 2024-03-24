@@ -38,10 +38,10 @@ public class DoctorController
 	String patientUrl;
 	
 	@GetMapping("/new")
-	public String newDoc()
+	public ResponseEntity<?> newDoc()
 	{
 		System.out.println("new doc");
-		return "doctor";
+		return ResponseEntity.ok("new");
 	}
 	
 	  @PostMapping("/add")
